@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    
+        <record model="res.groups" id="group_truck_outlet">
+            <field name="name">Truck/Outlet</field>
+        </record>
+        <record model="res.groups" id="group_truck_outlet_weights">
+            <field name="name">Truck/Outlet/Weights</field>
+        </record>
+        <record model="res.groups" id="group_truck_outlet_ship">
+            <field name="name">Truck/Outlet/Ship</field>
+        </record>
+    
+</odoo>

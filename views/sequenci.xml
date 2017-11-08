@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>      
+      
+<openerp>
+    <data noupdate="1"> 
+        <record id="seq_truck_outlet" model="ir.sequence">
+            <field name="name">reg</field>
+            <field name="code">reg_code_to</field>
+            <field name="prefix">TO</field>
+            <field name="padding">5</field>
+            <field name="implementation">no_gap</field>
+            <field name='number_increment'>1</field>
+        </record> 
+     </data>
+</openerp>

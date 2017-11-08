@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    
+        <record model="ir.ui.view" id="sale_order_truck_outlet">
+            <field name="name">sale.order.truck.outlet</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <button name="action_cancel" position="before">
+                    <button type="object" class="oe_highlight"
+                        name="truck_outlet" string="Trucks outlet"
+                        attrs="{'invisible': [('invoice_status', '!=', 'to invoice')]}"/>
+                </button>
+                <notebook position="inside">
+                    <page string="Trucks outlet">
+                        <field name="truck_outlet_ids"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    
+</odoo>
